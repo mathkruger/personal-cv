@@ -1,0 +1,91 @@
+:root {
+    --main-color: #1b262c;
+    --second-color: #0f4c75;
+    --third-color: #3282b8;
+    --fourth-color: #bbe1fa;
+}
+
+.btn-nightmode-change {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+
+    background-color: var(--main-color);
+}
+
+body.night {
+    background: black;
+
+    --main-color: #E4D9D3;
+    /* --second-color: #F0B38A;
+    --third-color: #CD7D47;
+    --fourth-color: #441E05; */
+}
+
+a,
+a * {
+    padding: 5px;
+    color: var(--second-color);
+}
+
+a:hover,
+a:hover * {
+    background: var(--second-color);
+    color: var(--fourth-color);
+}
+
+.content {
+    display: block;
+    max-width: 980px;
+    margin: auto;
+}
+
+.main-header {
+    display: block;
+    margin: 2rem 0;
+}
+
+.main-header h1 {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 0 0 var(--third-color), -2px 0 0 var(--fourth-color);
+}
+
+.main-header h1 strong,
+.main-header h1 small {
+    color: var(--main-color);
+    display: block;
+}
+
+.main-header h1 small {
+    font-size: 1rem;
+}
+
+.main-header ul {
+    display: flex;
+}
+
+.main-header .social ul {
+    margin-top: .5rem;
+    justify-content: center;
+}
+
+.main-header .social ul li a {
+    font-size: 1.3rem;
+}
+
+.main-header .main-nav ul {
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.main-header .main-nav ul a {
+    text-transform: uppercase;
+    font-weight: 600;
+}

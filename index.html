@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <title>Matheus Kruger - Web Dev</title>
+</head>
+
+<body>
+    <button class="btn-nightmode-change" onclick="toggleNightMode()">
+        <i class="nm-icon fas fa-moon"></i>
+    </button>
+    <div class="content">
+        <header class="main-header">
+            <h1>
+                <strong>Matheus Kruger</strong>
+                <small>Web developer</small>
+            </h1>
+
+            <div class="social">
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://fb.com/mathkruger">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.linkedin.com/in/mathkruger">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://github.com/mathkruger">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Formação</a></li>
+                    <li><a href="#">Idiomas</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Experiência</a></li>
+                    <li><a href="#">Capacitação</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+    </div>
+
+    <script>
+        var toggleNightMode = function() {
+            var body = document.querySelector('body');
+            var icon = document.querySelector('.nm-icon');
+
+            body.classList.toggle('night');
+
+            if(icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+            else {
+                icon.classList.add('fa-moon');
+                icon.classList.remove('fa-sun');
+            }
+        }
+    </script>
+</body>
+
+</html>
