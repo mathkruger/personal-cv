@@ -1,4 +1,5 @@
 :root {
+    --back-color: #FFF;
     --main-color: #1b262c;
     --second-color: #0f4c75;
     --third-color: #3282b8;
@@ -7,42 +8,49 @@
 
 .btn-nightmode-change {
     position: absolute;
-    right: 5px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     background-color: var(--main-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-nightmode-change * {
+    color: var(--back-color);
+}
+
+body {
+    background: var(--back-color);
 }
 
 body.night {
-    background: black;
-
+    --back-color: #1b262c;
     --main-color: #E4D9D3;
-    /* --second-color: #F0B38A;
-    --third-color: #CD7D47;
-    --fourth-color: #441E05; */
 }
 
+/*CLASSE GLOBAL DE LINKS*/
 a,
 a * {
     padding: 5px;
-    color: var(--second-color);
+    color: var(--main-color);
 }
 
-a:hover,
-a:hover * {
+a:hover, a:hover * {
     background: var(--second-color);
     color: var(--fourth-color);
 }
 
+/*GRID PRINCIPAL*/
 .content {
     display: block;
     max-width: 980px;
     margin: auto;
 }
 
+/*HEADER*/
 .main-header {
     display: block;
     margin: 2rem 0;
@@ -57,8 +65,7 @@ a:hover * {
     text-shadow: 2px 0 0 var(--third-color), -2px 0 0 var(--fourth-color);
 }
 
-.main-header h1 strong,
-.main-header h1 small {
+.main-header h1 strong, .main-header h1 small {
     color: var(--main-color);
     display: block;
 }
@@ -89,3 +96,5 @@ a:hover * {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/*FORMAÇÃO*/

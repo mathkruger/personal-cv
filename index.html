@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <button class="btn-nightmode-change" onclick="toggleNightMode()">
+    <button title="Modo Noturno/Claro" class="btn-nightmode-change" onclick="toggleNightMode()">
         <i class="nm-icon fas fa-moon"></i>
     </button>
     <div class="content">
@@ -54,27 +54,9 @@
                 </ul>
             </nav>
         </header>
-
-        
     </div>
 
-    <script>
-        var toggleNightMode = function() {
-            var body = document.querySelector('body');
-            var icon = document.querySelector('.nm-icon');
-
-            body.classList.toggle('night');
-
-            if(icon.classList.contains('fa-moon')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            }
-            else {
-                icon.classList.add('fa-moon');
-                icon.classList.remove('fa-sun');
-            }
-        }
-    </script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
