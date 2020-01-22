@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <button title="Modo Noturno/Claro" class="btn-nightmode-change" onclick="toggleNightMode()">
+    <button title="Modo Noturno/Claro" class="btn-padrao btn-nightmode-change" onclick="toggleNightMode()">
         <i class="nm-icon fas fa-moon"></i>
     </button>
     <div class="content">
-        <header class="main-header">
+        <header id="topo" class="main-header">
             <h1>
                 <strong>Matheus Kruger</strong>
                 <small>Web developer</small>
@@ -46,16 +46,19 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Formação</a></li>
-                    <li><a href="#">Idiomas</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Experiência</a></li>
-                    <li><a href="#">Capacitação</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#idiomas">Idiomas</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#xp">Experiência</a></li>
+                    <li><a href="#capacitacao">Capacitação</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
+    <a class="btn-padrao btn-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <script src="./js/scripts.js"></script>
 </body>
 

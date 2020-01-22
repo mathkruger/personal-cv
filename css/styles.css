@@ -6,20 +6,32 @@
     --fourth-color: #bbe1fa;
 }
 
+.btn-padrao {
+    background-color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    border-radius: 2px;
+} 
+
+.btn-padrao * {
+    color: var(--back-color);
+} 
+
 .btn-nightmode-change {
     position: absolute;
     right: 10px;
     top: 10px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    background-color: var(--main-color);
     font-size: 1rem;
-    cursor: pointer;
 }
 
-.btn-nightmode-change * {
-    color: var(--back-color);
+.btn-topo {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
 }
 
 body {
@@ -72,6 +84,7 @@ a:hover, a:hover * {
 
 .main-header h1 small {
     font-size: 1rem;
+    text-shadow: none;
 }
 
 .main-header ul {
